@@ -191,7 +191,7 @@ object v7:
   def read: ConsoleF[String]               = Free.Impure(Console.Read(str => Free.Pure(str)))
   def stop: ConsoleF[Unit]                 = Free.Impure(Console.Stop)
 
-  // Those free functions follow exactly the same pattern:
+  // Those 3 functions follow exactly the same pattern:
   def lift[F[_]: Functor, A](fa: F[A]): Free[F, A] = Free.Impure(fa.map(Free.Pure.apply))
 
   def prog: ConsoleF[Unit] = for
