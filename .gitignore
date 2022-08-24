@@ -23,6 +23,7 @@ project/plugins/project/
 .ensime_cache
 .bloop
 .metals
+metals.sbt
 
 # Intellij
 .idea/
