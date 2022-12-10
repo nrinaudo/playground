@@ -1,4 +1,3 @@
-
 lazy val root = Project(id = "playground", base = file("."))
   .settings(moduleName := "root")
   .settings(
@@ -8,6 +7,7 @@ lazy val root = Project(id = "playground", base = file("."))
   )
   .aggregate(gadt, free, abstractions)
 
-lazy val gadt = project
-lazy val free = project.dependsOn(abstractions)
+lazy val gadt         = project
+lazy val free         = project.dependsOn(abstractions)
 lazy val abstractions = project
+lazy val pbt          = project
