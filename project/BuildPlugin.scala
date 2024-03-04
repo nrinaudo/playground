@@ -14,7 +14,7 @@ object BuildPlugin extends AutoPlugin {
       organizationHomepage := Some(url("https://nrinaudo.github.io")),
       organizationName     := "Nicolas Rinaudo",
       startYear            := Some(2022),
-      scalaVersion         := "3.1.3",
+      scalaVersion         := "3.3.1",
       scalacOptions       ++= Seq("-source", "future", "-Ykind-projector:underscores"),
       licenses             := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.html")),
       developers := List(
